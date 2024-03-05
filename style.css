@@ -1,0 +1,194 @@
+
+
+#header {
+    background-color: #00CCAA;
+    padding: 1px;
+    color: white;
+    top: 0;
+    width: 100%;
+}
+#heading {
+    font-size:30px;
+    text-align: center;
+}
+.form{
+    margin-top: 75px;
+    margin-left: 200px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.panel-body{
+    gap: 50px;
+}
+.form-control{
+    margin-left: 125px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+.form-control-1{
+    margin-left: 112px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid grey;
+
+}
+.form-control-2{
+    margin-left: 86px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid grey;
+
+}
+.form-group{
+    margin-top: 20px;
+    display: flex;
+}
+
+#gender{
+    margin-left: 115px;
+}
+#skills{
+    margin-right: 112px;
+}
+.checkbox-inline{
+    margin-left: 15px;
+}
+.row-foot{
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+
+}
+#updateButton{
+    padding: 15px;
+    letter-spacing: 0.4px;
+    border-radius: 8px;
+    font-weight: 550;
+    background-color: rgb(50, 126, 240);
+    color: white;
+    font-size: 18px;
+    border: navy;
+    cursor: pointer;
+}
+#clearButton{
+    padding: 15px;
+    letter-spacing: 0.4px;
+    border-radius: 8px;
+    font-weight: 550;
+    background-color: rgb(221, 20, 20);
+    color: white;
+    font-size: 18px;
+    border: rgb(128, 11, 0);
+    cursor: pointer;
+}
+#productTable {
+    border-width: 2px;
+    border-color: yellowgreen;
+    padding:0px
+}
+
+#displayTable {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size:30px;
+}
+#OutputTable {
+    background-color:yellowgreen;
+    color:white;
+}
+
+#vertical {
+    border-left: 3px solid #00CCAA;
+    height: 450px;
+    position: absolute;
+    left: 50%;
+    top: 140px;
+    text-align: right;
+}
+#enroll{
+    margin-left: 320px;
+    
+}
+#description{
+    padding: 12px;
+    padding-left: 102px;
+    padding-right: 102px;
+}
+#OutputTable th{
+    font-size: 19px;
+}
+
+/* Makes Changes in the odd and even row entries */
+tr:nth-child(even) {
+    background-color: lightgoldenrodyellow;
+    padding: 0 0 0 0;
+    font-size: 13px;
+}
+tr:nth-child(odd) {
+    padding: 0 0 0 0;
+    font-size:13px;
+}
+#image {
+    width: 120px;
+    background-size: cover;
+}
+
+#newData {
+    border-color:yellowgreen;
+}
+
+/* Fade in Animation for when a student is enrolled */
+.animated {
+    -webkit-animation-duration: 8s;
+    animation-duration: 8s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+/* Color of the error message */
+#errorMsg{
+    color:red;
+}
+
+* {
+    outline: none;
+}
+
+.message {
+    display: inline-block;
+}
+
+
+
+.email-field:focus:invalid + .message::after {
+    color: red;
+    content: "Invalid email address";
+}
